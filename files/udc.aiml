@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-  <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
-  </category>
+    
+    <category>
+		<pattern>APPLICATION NAME IS *</pattern>
+		<template>You are in <think><set name = "app_name"><star /></set></think></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS APPLICATION NAME</pattern>
+        <template>Application Name is <get name = "app_name" /></template>
+    </category>
   
-  <category>
-      <pattern>WHERE CAN I FIND YOU</pattern>
-      <template>Everywhere</template>
-  </category>
 </aiml>
+
